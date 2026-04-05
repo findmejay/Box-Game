@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#main {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(5, 80px);
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.red {
+    background-color: red;
+}
+.box {
+    width: 80px;
+  height: 80px;
+  background-color: rgb(67, 67, 255);
+  cursor: pointer;
+  border-radius: 20px;
+}

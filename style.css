@@ -1,40 +1,60 @@
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-#main {
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-   position: relative;
-}
-
-#main h1 {
-    position: absolute;
-    top: 40px;
-    margin-bottom: 40px;
-}
-
-#grid {
-    display: grid;
-    grid-template-columns: repeat(5, 80px);
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
-}
-
 .red {
     background-color: red;
 }
+
 .box {
-    width: 80px;
-  height: 80px;
+    width: 55px;
+  height: 55px;
   background-color: rgb(67, 67, 255);
   cursor: pointer;
-  border-radius: 20px;
+  border-radius: 15px;
+
+}
+
+.box:hover {
+    scale: 1.1;
+    transition: all ease 0.3s;
+}
+
+
+@media (min-width: 768px) {
+    .box {
+        width: 70px;
+        height: 70px;
+        cursor: pointer;
+        border-radius: 10px;
+        border: 0.3vw solid rgb(4, 4, 255);
+    }
+}
+
+@media (min-width: 1024px) {
+    .box {
+        width: 75px;
+        height: 75px;
+        cursor: pointer;
+        border-radius: 10px;
+        border: 0.3vw solid rgb(4, 4, 255);
+    }
+}
+
+@media (min-width: 1280px) {
+    .box {
+        width: 80px;
+        height: 80px;
+        cursor: pointer;
+        border-radius: 20px;
+        border: 0.3vw solid rgb(4, 4, 255);
+    }
 }

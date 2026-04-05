@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <div id="main">
-        <h1>Box Game</h1>
-        <div id="grid"></div>
+    <div id="main" class="h-screen w-screen flex flex-col justify-center items-center max-sm:gap-1 gap-2">
+        <h1 class="max-sm:text-[1.7rem] sm:text-3xl md:text-4xl lg:text-5xl max-sm:mb-8 mb-14 ">Box Game</h1>
+        <div id="grid" class="grid grid-cols-5 max-sm:gap-1.5 gap-3"></div>
+        <button id="btn" class="border bg-[#ff3434] rounded-lg text-white py-4 px-7 mt-6 max-sm:py-2 max-sm:px-4 sm:px-7 sm:py-3 md:py-3 md:px-8">Reset</button>
     </div>
     
     <script src="index.js"></script>
